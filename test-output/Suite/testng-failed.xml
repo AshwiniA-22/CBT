@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser-name" value="safari"/>
+  <test thread-count="3" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser-name" value="Firefox"/>
+    <classes>
+      <class name="com.testingTestNG.cbt.CBT">
+        <methods>
+          <include name="setUP1"/>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- com.testingTestNG.cbt.CBT -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="3" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser-name" value="Chrome"/>
+    <classes>
+      <class name="com.testingTestNG.cbt.CBT">
+        <methods>
+          <include name="setUP1"/>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- com.testingTestNG.cbt.CBT -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="3" parallel="tests" name="InternetExplorerTest(failed)">
+    <parameter name="browser-name" value="MicrosoftEdge"/>
+    <classes>
+      <class name="com.testingTestNG.cbt.CBT">
+        <methods>
+          <include name="setUP1"/>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- com.testingTestNG.cbt.CBT -->
+    </classes>
+  </test> <!-- InternetExplorerTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

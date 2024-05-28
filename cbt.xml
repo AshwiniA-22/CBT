@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+
+	<parameter name="browser-name" value="safari" />
+
+
+	<test name="ChromeTest">
+		<parameter name="browser-name" value="Chrome" />
+		<classes>
+			<class name="com.testingTestNG.cbt.CBT" />
+		</classes>
+	</test> <!--Test -->
+
+	<test name="FirefoxTest">
+		<parameter name="browser-name" value="Firefox" />
+		<classes>
+			<class name="com.testingTestNG.cbt.CBT" />
+		</classes>
+	</test> <!--Test -->
+
+	<test name="InternetExplorerTest">
+		<parameter name="browser-name" value="MicrosoftEdge" />
+		<classes>
+			<class name="com.testingTestNG.cbt.CBT" />
+		</classes>
+	</test> <!--Test -->
+
+</suite> <!--
+Suite -->
